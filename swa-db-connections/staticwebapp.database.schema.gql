@@ -1,5 +1,4 @@
 type Sites @model {
   id: ID
-  sqlDbId: int
   defaultHostname: string
 }
