@@ -1,4 +1,4 @@
 type Sites @model {
   id: ID
-  name: string
+  Name: String
 }
