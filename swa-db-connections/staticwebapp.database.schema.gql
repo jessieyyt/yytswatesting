@@ -1,4 +1,4 @@
-type Sites @model {
+type Person @model {
   id: ID
   Name: String
 }
