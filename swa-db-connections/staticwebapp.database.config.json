@@ -26,8 +26,8 @@
     }
   },
   "entities": {
-    "Sites": {
-      "source": "staticwebapps",
+    "Persons": {
+      "source": "Persons",
       "permissions": [
         {
           "actions": ["*"],
