@@ -27,7 +27,7 @@
   },
   "entities": {
     "Persons": {
-      "source": "Persons",
+      "source": "students",
       "permissions": [
         {
           "actions": ["*"],
