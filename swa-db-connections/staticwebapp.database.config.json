@@ -10,19 +10,23 @@
   },
   "runtime": {
     "rest": {
-      "path": "/api",
       "enabled": true,
-      "request-body-strict": true
+      "path": "/rest"
+    },
+    "graphql": {
+      "enabled": true,
+      "path": "/graphql",
+      "allow-introspection": true
     },
     "host": {
-      "mode": "production",
       "cors": {
-        "origins": ["http://localhost:4280"],
+        "origins": [],
         "allow-credentials": false
       },
       "authentication": {
         "provider": "StaticWebApps"
-      }
+      },
+      "mode": "production"
     }
   },
   "entities": {
