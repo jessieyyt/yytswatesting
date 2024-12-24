@@ -5,7 +5,8 @@
     "options": {
       "database": "MyTestPersonDatabase",
       "schema": "staticwebapp.database.schema.gql"
-    }
+    },
+    "connection-string": "@env('DATABASE_CONNECTION_STRING')"
   },
   "runtime": {
     "graphql": {
