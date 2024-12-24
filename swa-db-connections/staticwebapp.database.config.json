@@ -6,7 +6,7 @@
       "database": "MyTestPersonDatabase",
       "schema": "staticwebapp.database.schema.gql"
     },
-    "connection-string": "@env('DATABASE_CONNECTION_STRING')"
+    "connection-string": "AccountEndpoint=https://swa-demo-cosmos.documents.azure.com:443/;AccountKey=2MBgMHDXyF2AJpmZtWyHWuL8YbTH9qyYvVaisbrNPS8ErWxtmxxv1X9lJk5gYp2ToAxqFeCc5S8NACDby3b2Ug==;"
   },
   "runtime": {
     "graphql": {
