@@ -12,7 +12,7 @@
     "graphql": {
       "allow-introspection": true,
       "enabled": true,
-      "path": "/graphql"
+      "path": "/mydb"
     },
     "host": {
       "mode": "production",
