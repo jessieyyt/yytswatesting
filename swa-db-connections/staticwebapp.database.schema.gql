@@ -1,4 +1,0 @@
-type Person @model {
-  id: ID
-  Name: String
-}
