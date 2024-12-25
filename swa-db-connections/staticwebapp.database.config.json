@@ -1,22 +1,21 @@
 {
-  "$schema": "https://github.com/Azure/data-api-builder/releases/latest/download/dab.draft.schema.json",
+  "$schema": "https://dataapibuilder.azureedge.net/schemas/latest/dab.draft.schema.json",
   "data-source": {
-    "database-type": "cosmosdb_nosql",
+    "database-type": "mssql",
     "options": {
-      "database": "MyTestPersonDatabase",
-      "schema": "staticwebapp.database.schema.gql"
+      "set-session-context": false 
     },
     "connection-string": "@env('DATABASE_CONNECTION_STRING')"
   },
   "runtime": {
+    "rest": {
+      "enabled": true,
+      "path": "/rest"
+    },
     "graphql": {
       "allow-introspection": true,
       "enabled": true,
       "path": "/graphql"
-    },
-    "rest": {
-      "enabled": true,
-      "path": "/rest"
     },
     "host": {
       "mode": "production",
@@ -31,7 +30,7 @@
   },
   "entities": {
     "Person": {
-      "source": "MyTestPersonContainer",
+      "source": "dbo.MyTestPersonTable",
       "permissions": [
         {
           "actions": ["*"],
