@@ -1,4 +1,13 @@
 {
+  "login": {
+    "tokenStore": {
+      "enabled": true,
+      "tokenRefreshExtensionHours": 72,
+      "azureBlobStorage": {
+        "sasUrlSettingName": "WEBSITE_AUTH_TOKEN_CONTAINER_SASURL"
+      }
+    }
+  },
   "routes": [
     {
       "route": "/*",
