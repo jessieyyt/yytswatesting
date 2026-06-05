@@ -1,13 +1,4 @@
 {
-  "login": {
-    "tokenStore": {
-      "enabled": true,
-      "tokenRefreshExtensionHours": 72,
-      "azureBlobStorage": {
-        "sasUrlSettingName": "WEBSITE_AUTH_TOKEN_CONTAINER_SASURL"
-      }
-    }
-  },
   "responseOverrides": {
     "401": {
       "statusCode": 302,
